@@ -34,11 +34,3 @@ let lightbox = new SimpleLightbox('.gallery a', {
     captionDelay: 250,
 });
 
-const onKeydownEsc = event => {
-    console.log(event.code);
-    if (event.code === 'Escape') {
-        instance.close();
-    }
-};
-
-instance.show();
